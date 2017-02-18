@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+require 'bundler/setup'
+require 'imagecollage'
+
+cli = ImageCollage::Cli.new
+
+result = cli.run
+
+exit result

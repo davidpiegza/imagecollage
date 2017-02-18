@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.flickr.com/services/rest?api_key=12345&extras=url_z&method=flickr.photos.search&per_page=1&sort=interestingness-desc&text=forest
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 15 Feb 2017 17:36:15 GMT
+      Content-Type:
+      - text/xml; charset=utf-8
+      Content-Length:
+      - '277'
+      P3p:
+      - policyref="https://policies.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM
+        DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND
+        PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      X-Robots-Tag:
+      - noindex
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www301.flickr.bf1.yahoo.com
+      X-Frame-Options:
+      - SAMEORIGIN
+      Vary:
+      - Accept-Encoding
+      Age:
+      - '1'
+      Via:
+      - http/1.1 fts128.flickr.bf1.yahoo.com (ApacheTrafficServer [cMsSf ]), http/1.1
+        e10.ycpi.deb.yahoo.com (ApacheTrafficServer [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<photos
+        page=\"1\" pages=\"3155555\" perpage=\"1\" total=\"3155555\">\n\t<photo id=\"16226552523\"
+        owner=\"37065582@N06\" secret=\"ddf301eca9\" server=\"8664\" farm=\"9\" title=\"forest
+        mood\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" url_z=\"https://farm9.staticflickr.com/8664/16226552523_ddf301eca9_z.jpg\"
+        height_z=\"480\" width_z=\"640\" />\n</photos>\n</rsp>\n"
+    http_version: 
+  recorded_at: Wed, 15 Feb 2017 17:36:16 GMT
+recorded_with: VCR 3.0.3

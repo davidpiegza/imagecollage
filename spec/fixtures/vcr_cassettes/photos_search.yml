@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.flickr.com/services/rest?api_key=12345&extras=url_z&method=flickr.photos.search&per_page=1&sort=interestingness-desc&text=berlin
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 15 Feb 2017 09:21:22 GMT
+      Content-Type:
+      - text/xml; charset=utf-8
+      Content-Length:
+      - '299'
+      P3p:
+      - policyref="https://policies.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM
+        DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND
+        PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      X-Robots-Tag:
+      - noindex
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www258.flickr.bf1.yahoo.com
+      X-Frame-Options:
+      - SAMEORIGIN
+      Vary:
+      - Accept-Encoding
+      Age:
+      - '2'
+      Via:
+      - http/1.1 fts118.flickr.bf1.yahoo.com (ApacheTrafficServer [cMsSf ]), http/1.1
+        e19.ycpi.deb.yahoo.com (ApacheTrafficServer [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<photos
+        page=\"1\" pages=\"3064036\" perpage=\"1\" total=\"3064036\">\n\t<photo id=\"15283849704\"
+        owner=\"57896932@N03\" secret=\"d4759f03a9\" server=\"8587\" farm=\"9\" title=\"Oberhafen
+        &amp; Unterhafen, Berlin\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" url_z=\"https://farm9.staticflickr.com/8587/15283849704_d4759f03a9_z.jpg\"
+        height_z=\"323\" width_z=\"640\" />\n</photos>\n</rsp>\n"
+    http_version: 
+  recorded_at: Wed, 15 Feb 2017 09:21:22 GMT
+recorded_with: VCR 3.0.3
