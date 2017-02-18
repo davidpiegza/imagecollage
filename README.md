@@ -4,9 +4,25 @@ ImageCollage creates a collage based on images from Flickr.
 
 ## Installation
 
+#### ImageMagick
+
+This gem requires [ImageMagick](http://www.imagemagick.org) in order to run. Check the
+[download section](http://www.imagemagick.org/script/download.php) at ImageMagick to get
+instructions on how to install it.
+
+Install it via homebrew (OSX):
+
+    $ brew install imagemagick@6
+
+#### ImageCollage
+
 Install it via gem:
 
     $ gem install imagecollage
+
+If you get an error while installing `rmagick` you could try installing it with:
+
+    $ PKG_CONFIG_PATH=/usr/local/opt/imagemagick@6/lib/pkgconfig gem install rmagick
 
 ## Usage
 
